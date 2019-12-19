@@ -34,6 +34,7 @@ class Game {
         this.spanGames.textContent = stats[0];
         this.spanWins.textContent = stats[1];
         this.spanLosses.textContent = stats[2];
+        this.inputBid.value = "";
     }
 
     startGame() {
@@ -58,6 +59,4 @@ class Game {
         this.render(colors, this.wallet.getWalletValue(), win, this.stats.showGameStatictics(), bid, wonMoney)
 
     }
-
-
 }
